@@ -1,0 +1,16 @@
+{
+  "name": "helix-skills",
+  "version": "22.0.0-alpha.1",
+  "description": "Helix design-system AI coding guidance (Agent Skills + AGENTS.md + Copilot instructions). Generated from cdx-next; distributed independently of @cdx/*.",
+  "type": "module",
+  "bin": {
+    "helix-skills": "src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "skills",
+    "agents-section.md",
+    "copilot-instructions.md",
+    "README.md"
+  ]
+}
