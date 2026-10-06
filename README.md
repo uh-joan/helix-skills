@@ -1,13 +1,12 @@
 # helix-skills
 
-AI coding guidance for the **Helix** design system (Angular / Material 3) —
-Agent Skills, an `AGENTS.md` block and GitHub Copilot instructions, so
-Claude Code, Cursor and Copilot write correct, on-brand Helix code.
+AI coding guidance for the **Helix** design system (Angular / Material 3): Agent
+Skills, an `AGENTS.md` block and GitHub Copilot instructions, so Claude Code,
+Cursor and Copilot write correct, on-brand Helix code.
 
-> **Generated — do not edit by hand.** Authored in `cdx-next` (one
-> `*.guide.md` per pattern) and exported here with
-> `node tools/patterns/generate-pattern-ai.mjs --export <dir>`. This repo is a
-> distribution mirror, independent of the `@cdx/*` npm packages and registry.
+> **Generated — do not edit by hand.** Built from the Helix design-system source
+> (one `*.guide.md` per pattern) and refreshed by re-running the exporter. This
+> repo is a distribution mirror; it carries guidance only, no package source.
 
 ## What's here
 
@@ -33,8 +32,6 @@ Or pull just the skills with the Agent Skills CLI:
 npx skills add uh-joan/helix-skills
 ```
 
-(While the repo is private, both need access to it.)
-
 ## Versioning
 
 The guidance tracks a Helix major. Pin by **git tag** (e.g. `v22`) rather than
@@ -47,7 +44,9 @@ npx github:uh-joan/helix-skills#v22 sync
 The CLI warns if the `@cdx/*` version installed in your target repo doesn't
 match; pass `--strict` to make that a hard stop.
 
-## Note
+## Requirements
 
-This is guidance, not the components. Your app still installs the real
-`@cdx/*` packages — the skills tell the agent how to compose them.
+This is **guidance, not the components.** The skills themselves are just markdown
+plus a zero-dependency CLI (Node only). To actually build, your app installs the
+real `@cdx/*` Helix packages, which come from their own npm registry and require
+access to it — the skills just tell the agent how to compose them.
